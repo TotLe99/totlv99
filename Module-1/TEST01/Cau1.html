@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Cho danh sách các điểm thi ở trong một mảng <br>
+    Hãy viết hàm tìm được điểm thi cao thứ 3 với đầu vào là một mảng điểm.(không dùng hàm có sẵn để sắp xếp).
+</h3>
+</body>
+</html>
+<script>
+    let diem = [4, 9, 9, 1, 6, 3, 5];
+
+    document.write("Điểm cao nhất = " + kiemTraDiemCaoThu3(diem));
+
+    function kiemTraDiemCaoThu3(diem) {
+        let max = [0];
+        let max02 = [0];
+        for (let i = 1; i < diem.length; i++) {
+            if (max < diem[i]) {
+                max = diem[i];
+            }
+
+        }
+    }
+
+</script>

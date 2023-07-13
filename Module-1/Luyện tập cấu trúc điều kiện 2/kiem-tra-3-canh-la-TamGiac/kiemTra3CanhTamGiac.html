@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 cạnh Tam Giác</title>
+</head>
+<body>
+<h1>Kiểm tra 3 cạnh có phải là Tam Giác</h1>
+<p>Nhập cạnh a: <input id="canhA" value=""></p>
+<p>Nhập cạnh b: <input id="canhB" value=""></p>
+<p>Nhập cạnh c: <input id="canhC" value=""></p>
+<button type="button" onclick="check()">Kiểm tra</button>
+<br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function check() {
+        let a = parseFloat(document.getElementById("canhA").value);
+        let b = parseFloat(document.getElementById("canhB").value);
+        let c = parseFloat(document.getElementById("canhC").value);
+        let result = document.getElementById("result");
+
+        if ((a, b, c > 0) && (a + b > c) && (b + c > a) && (a + c > b)) {
+            result.innerText = "a, b, c là cạnh của Tam Giác!!!";
+        } else {
+            result.innerText = "a, b, c không phải cạnh Tam Giác"
+        }
+    }
+</script>

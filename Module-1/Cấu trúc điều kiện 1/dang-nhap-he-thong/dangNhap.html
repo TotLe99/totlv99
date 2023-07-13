@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập hệ thống</title>
+</head>
+<body>
+<script>
+  let userName = prompt("Nhập tên đăng nhập", "")
+  let pass = prompt("Nhập mật khẩu", "")
+
+  if (userName == "tot" && pass == "123") {
+    alert("Đăng nhập thành công!");
+  } else if (userName == null || pass == null) {
+      alert("Mời nhập lại.")
+  } else {
+      alert("Đăng nhập thất bại.")
+  }
+</script>
+</body>
+</html>

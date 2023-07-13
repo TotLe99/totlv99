@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>V thuộc mảng đã cho xoá V khỏi mảng</h3>
+</body>
+</html>
+<script>
+  let array = [5, 6, 1, 9, 10, 13, 19, 9, 1, 5];
+  let new_array = [];
+  let c = 0;
+  let V = prompt("Nhập phần tử cần xoá")
+
+  for (let i = 0; i < array.length; i++) {
+      if (array[i] == V) {
+          new_array[c] = array[i];
+          c++;
+
+      }
+      alert(new_array[c])
+  }
+
+
+
+
+
+  // let i = 0;
+  // do {
+  //     let V = prompt("Nhập số cần tìm trong mảng");
+  //     if (V == array[i]) {
+  //
+  //     }
+  // }
+  // while (i < array.length)
+  //
+  // }
+</script>

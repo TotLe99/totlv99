@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không</h3>
+</body>
+</html>
+<script>
+  let number = prompt("Nhập kiểm tra")
+
+  document.write(checkNumber(number))
+  function checkNumber(number) {
+    if ((number >= '0') && (number <= '9')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>

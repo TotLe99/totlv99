@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="hienThi()" type="button">Hiển thị</button>
+
+<h2>Display All Product</h2>
+
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td></td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody id="hienthi">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
+<script>
+    let arr = ['samsung', 'nokia', 'iphone'];
+
+    function hienThi() {
+        let str = ""
+        for (let i = 0; i < arr.length; i++) {
+            str += `<tr>
+                <td>` + arr[i] + `</td>
+                <td>
+                    <button>Sửa</button>
+                </td>
+                <td>
+                    <button>Xoá</button>
+                </td>
+            </tr>`
+        }
+        document.getElementById("hienthi").innerHTML = str
+    }
+
+    function them() {
+
+    }
+
+    function sua() {
+
+    }
+
+    function xoa() {
+
+    }
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tạo một class Bank để quản lý tài khoản ngân hàng của các khách hàng và các giao dịch</h3>
+</body>
+</html>
+<script>
+    class Bank {
+        number_bank;
+        name;
+        money;
+
+        constructor(number_bank, name, money) {
+            this.number_bank = number_bank;
+            this.name = name;
+            this.money = money;
+        }
+
+        display() {
+            document.write("Số tài khoản: " + this.number_bank + "<br>Tên: " + this.name + "<br>Tiền: " + this.money
+                + "$ <br><br><hr>")
+        }
+
+        napTien() {
+            let nap = parseInt(prompt("Nạp tiền"))
+            if (nap >= 0) {
+                this.money = nap + this.money;
+                document.write("Tài khoản " + this.number_bank + " vừa nạp: " + nap + "$"
+                    + "<br>Tiền: " + this.money + "$ <hr>")
+            } else {
+                document.write("Số tiền không hợp lệ!")
+            }
+        }
+
+        rutTien() {
+            let rut = parseInt(prompt("Số tiền cần Rút"));
+            if (rut <= this.money) {
+                this.money = this.money - rut;
+                document.write("Tài khoản " + this.number_bank + " vừa rút: " + rut + "$"
+                    + "<br>Tiền: " + this.money + "$ <hr>")
+            } else {
+                document.write("Số tiền muốn rút không hợp lệ!")
+            }
+        }
+    }
+
+    let number_bank1 = new Bank(132548556454, "Văn T", 0);
+    let number_bank2 = new Bank(264486444444, "Văn G", 0);
+
+    number_bank1.display();
+    number_bank1.napTien();
+    number_bank1.rutTien();
+
+    number_bank2.display();
+    number_bank2.napTien();
+    number_bank2.rutTien();
+</script>

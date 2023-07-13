@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm tính diện tích, hàm tính chu vi hình tròn</h3>
+</body>
+</html>
+<script>
+    const PI = 3.1416
+    let banKinh = parseFloat(prompt("Nhập bán kinh hình tròn"))
+
+    document.write("Chu vi hình tròn = " + chuviHinhtron(banKinh) + "<br>")
+    document.write("Diện tích hình tròn = " + dientichHinhtron(banKinh))
+
+    function chuviHinhtron(banKinh) {
+        return banKinh * 2 * PI;
+    }
+
+    function dientichHinhtron() {
+        return banKinh * banKinh * PI;
+    }
+</script>

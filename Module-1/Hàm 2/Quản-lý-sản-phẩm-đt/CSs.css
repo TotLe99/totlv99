@@ -1,0 +1,30 @@
+th {
+    text-align: left;
+    padding: 10px 5px;
+}
+table {
+    width: 40%;
+}
+td {
+    padding: 10px 5px;
+}
+button {
+    background-color: #00cc00;
+    color: white;
+    height: 38px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: grab;
+
+
+}
+button:hover {
+
+    color: white;
+    background-color: #42b72a;
+
+}
+button:active{
+    cursor: grabbing;
+}

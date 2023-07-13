@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+<h1>Tính tiền điện</h1>
+<p>Số kWh đã sử dụng: <input id="kwh" value=""></p>
+<button type="button" onclick="tongTien()">Tổng tiền</button>
+<br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function tongTien() {
+        let kwh = parseFloat(document.getElementById("kwh").value);
+        let result = document.getElementById("result");
+        let tienDien;
+
+        if ((kwh > 0) && (kwh <= 50)) {
+            tienDien = kwh * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else if ((kwh >= 51) && (kwh <= 100)) {
+            tienDien = (kwh - 50) * 1734 + 50 * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else if ((kwh >= 101) && (kwh <= 200)) {
+            tienDien = (kwh - 100) * 2014 + 50 * 1734 + 50 * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else if ((kwh >= 201) && (kwh <= 300)) {
+            tienDien = (kwh - 200 ) * 2536 + 100 * 2014 + + 50 * 1734 + 50 * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else if ((kwh >= 301) && (kwh <= 400)) {
+            tienDien = (kwh - 300) * 2834 + 100 * 2536 + 100 * 2014 + + 50 * 1734 + 50 * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else if (kwh >= 401) {
+            tienDien = (kwh - 400) * 2927 + 100 * 2834 + 100 * 2536 + 100 * 2014 + + 50 * 1734 + 50 * 1678;
+            result.innerText = "Bạn đã sử dụng " + kwh + " kWh. Số tiền phải trả là " + tienDien + "$";
+        } else {
+            result.innerText = "Vui lòng nhập lại số kWh";
+        }
+    }
+</script>

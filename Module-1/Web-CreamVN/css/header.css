@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+    color: #4b4342;
+    line-height: 28px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.btnLogin {
+    position: fixed;
+    right: 25px;
+    bottom: 175px;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 99;
+    transition: all 300ms ease;
+    animation: rotate 0.1s infinite;
+}
+
+.btnLogin button {
+    border: 1px solid #000000;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #000000;
+    background: transparent;
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 0.1s infinite;
+}
+
+.btnLogin button:hover {
+    background-color: #000000;
+    color: white;
+    transition: .5s;
+}
+
+.messenger {
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 99;
+    transition: all 300ms ease;
+    animation: rotate 0.1s infinite;
+}
+
+.messenger button i {
+    animation: rotate 1s infinite;
+}
+
+.messenger button {
+    border: 1px solid seagreen;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: seagreen;
+    background: transparent;
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 0.1s infinite;
+}
+
+.messenger button:hover {
+    background-color: seagreen;
+    color: white;
+    transition: .5s;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 99;
+    /*transition: all 300ms ease;*/
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+.scroll-to-top a:hover {
+    background-color: #ff91a4;
+    color: white;
+    transition: 0.5s;
+}
+
+.scroll-to-top a {
+    border: 1px solid #ff91a4;
+    border-radius: 50%;
+    color: #ff91a4;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    transition: 100ms ease;
+}
+
+header {
+    background-image: url(../img/main.jpg);
+    background-size: 100%;
+}
+
+.search-bar {
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: .5px solid white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: grab;
+    font-size: 16px;
+    color: white;
+}
+
+.search-bar input:active {
+    cursor: grabbing;
+}
+
+.search-bar input::placeholder {
+    color: #e4e4e4;
+}
+
+.search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-bar button i {
+    font-size: 15px;
+}
+
+.main-box {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.logo img {
+
+    height: 185px;
+    width: 185px;
+}
+
+.menu {
+    width: 50%;
+    height: 100%;
+}
+
+.menu-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+    background-color: white;
+    border: 2px solid #58A59E;
+    border-radius: 20px;
+    line-height: 40px;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 1px 0;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 100%);
+    -webkit-transition: 1s;
+    transition: 1s ease;
+}
+
+
+.sub-menu li a {
+    height: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #4b4342;
+}
+
+.sub-menu li a:hover {
+    color: teal;
+}
+
+.menu-list li:hover .sub-menu {
+    display: block;
+    transition: 0.8s;
+}
+
+.menu-list li a {
+    transition: 0.8s;
+    position: relative;
+    color: white;
+}
+
+.menu-list li a:hover {
+    color: teal;
+}
+
+.menu-list li a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: teal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-list li a:hover::after {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+.outer-box {
+    display: flex;
+}
+
+.cart {
+    margin-right: 15px;
+}
+
+.cart:hover {
+    color: teal;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+}
+
+.icon:hover {
+    color: teal;
+}
+
+a {
+    text-decoration: none;
+    cursor: grab;
+}
+
+a:active {
+    cursor: grabbing;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: grab;
+}
+
+button:active {
+    cursor: grabbing;
+}

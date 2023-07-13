@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = [7, 3, 1, 5, 9];
+    //tim giá trị nhỏ nhất và vị trí của nó.
+    let min = n[0];
+    let minIndex = 0;
+    for (let i = 0; i < n.length; i++) {
+        if (min > n[i]) {
+            min = n[i];
+            minIndex = i + 1;
+        }
+    }
+    console.log("min = " , min);
+    console.log("Vi tri = " , minIndex);
+
+
+</script>

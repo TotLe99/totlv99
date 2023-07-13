@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tạo một class Person để lưu trữ thông tin cá nhân của một người như tên, địa chỉ, email, số điện thoại</h3>
+</body>
+</html>
+<script>
+    class Person {
+        name;
+        address;
+        email;
+        phone;
+
+        constructor(name, address, email, phone) {
+            this.name = name;
+            this.address = address;
+            this.email = email;
+            this.phone = phone;
+        }
+
+        hienThi() {
+            document.write("Tên: " + this.name + "<br>Địa chỉ: " + this.address
+                + "<br>Email: " + this.email + "<br>Điện thoại: " + this.phone + "<hr>");
+        }
+    }
+
+    let name1 = new Person("LVT", "Hà nội", "gmail@gamil.com", "098765432");
+    name1.hienThi();
+    let name2 = new Person("Vương", "không","email@gamil.com", "012578904");
+    name2.hienThi();
+    let name3 = new Person("Tùng", "không", "12345@gamil.com", "017228304");
+    name3.hienThi();
+    let name4 = new Person("Linh", "không", "09876@gamil.com", "024464304");
+    name4.hienThi();
+</script>

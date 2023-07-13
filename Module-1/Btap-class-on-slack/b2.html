@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tạo một class Rectangle để tính diện tích và chu vi của một hình chữ nhật.</h3>
+</body>
+</html>
+<script>
+    class Rectangle {
+        chieuDai;
+        chieuRong;
+
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        hienThi() {
+            document.write("Chiều dài = " + this.chieuDai + "<br>Chiều rộng = " + this.chieuRong);
+        }
+
+        dienTich() {
+            document.write("<br>Diện tích = " + this.chieuDai * this.chieuRong);
+        }
+
+        chuVi() {
+            document.write("<br>Chu vi = " + (this.chieuRong + this.chieuRong) * 2);
+        }
+    }
+
+    let dai = parseInt(prompt("Nhập chiều dài"));
+    let rong = parseInt(prompt("Nhập chiều rộng"));
+    let HCN = new Rectangle(dai, rong);
+    HCN.hienThi();
+    HCN.dienTich();
+    HCN.chuVi();
+
+</script>

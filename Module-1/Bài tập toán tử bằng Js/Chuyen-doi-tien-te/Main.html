@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input id="amount"></td>
+            <td>
+                <select id="fromTien">
+                    <option value="VietNam">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+
+            <td>
+                <select id="toTien">
+                    <option name=usd value="USD">USD</option>
+                    <option name=vnd value="VietNam">VietNam</option>
+                </select>
+            </td>
+
+            <td>
+                <button onclick="changeMonney()" type="button">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p id="Result"></p>
+</form>
+</body>
+</html>
+
+<script src="doiTien.js"></script>

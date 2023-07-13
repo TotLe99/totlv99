@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class HinhTron {
+        banKinh;
+        dienTich;
+        chuVi;
+
+        constructor(banKinh) {
+            this.banKinh = banKinh;
+            this.chuVi = Math.PI * 2 * banKinh;
+            this.dienTich = Math.PI * banKinh * banKinh;
+        }
+
+        hienThi() {
+            document.write("Ban kinh = " + this.banKinh + "<br>Chu vi tron = " + this.chuVi +"<br>Dien tich Tron = " + this.dienTich)
+        }
+    }
+    let hinh_tron = new HinhTron(3)
+    hinh_tron.hienThi();
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+    <style>
+
+        td:nth-child(even) {
+            color: #1877f2;
+        }
+        td:nth-child(odd) {
+            color: #ff91a4;
+        }
+    </style>
+</head>
+<body>
+<h1>Bảng cửu chương</h1>
+</body>
+</html>
+<script>
+    let sout;
+    sout = "<table border='1' width='60%' cellspacing ='0' cellpadding='15'>";
+    for (i = 1; i <= 10; i++) {
+        sout += "<tr>";
+        for (j = 1; j <= 10; j++) {
+            sout += "<td>" + j + "*" + i + "=" + i * j +"</td>";
+        }
+        sout += "</tr>";
+    }
+    sout += "</table>";
+    document.write(sout);
+</script>

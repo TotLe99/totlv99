@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Chương trình này đếm số ký tự số trong mảng</h3>
+</body>
+</html>
+<script>
+    let arr = ['c', 's', 'c', '2', '6', '1'];
+    let numbers = '1234567890';
+    let arr_numbers = [];
+    let index_arr_numbers = 0;
+
+    document.write("arr = [" + arr.join(", ") + "]" + "<br>")
+    for (let i = 0; i < arr.length; i++) {
+        if (numbers.indexOf(arr[i]) !== -1) {
+            arr_numbers.push(arr[i])
+            index_arr_numbers = arr_numbers.length;
+        }
+    }
+
+    document.write("arr_numbers = [" + arr_numbers.join(", ") + "]" + "<br>")
+    document.write("Ký tự số trong mảng = " + index_arr_numbers)
+
+</script>

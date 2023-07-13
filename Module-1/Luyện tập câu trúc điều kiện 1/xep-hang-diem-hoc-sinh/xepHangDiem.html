@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học sinh</title>
+</head>
+<body>
+<script>
+    let diem1 = parseFloat(prompt("Nhập Điểm giữa kỳ"));
+    let diem2 = parseFloat(prompt("Nhập Điểm cuối kỳ"));
+    let diemGiuaKy = "";
+    let diemCuoiKy = "";
+
+
+    if ((diem1 < 4) && (diem1 >= 0)){
+        diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Kém.";
+    } else if ((diem1 < 6) && (diem1 >= 4)){
+        diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Trung Bình.";
+    } else if ((diem1 < 8) && (diem1 >= 6)){
+        diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Khá!";
+    } else if ((diem1 <= 10) && (diem1 >= 8)){
+        diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Giỏi!!!";
+    } else {
+        alert("Mời nhập lại");
+    }
+
+    alert(diemGiuaKy);
+
+    if ((diem2 < 4) && (diem2 >= 0)){
+        diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Kém.";
+    } else if ((diem2 < 6) && (diem2 >= 4)){
+        diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Trung Bình.";
+    } else if ((diem2 < 8) && (diem2 >= 6)){
+        diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Khá!";
+    } else if ((diem2 <= 10) && (diem2 >= 8)){
+        diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Giỏi!!!";
+    } else {
+        alert("Mời nhập lại");
+    }
+
+    alert(diemCuoiKy);
+
+
+
+    // if (diem1 < 4 || diem2 < 4) {
+    //     diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Kém.";
+    //     diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Kém.";
+    // } else if (diem1 < 6 || diem2 < 6) {
+    //     diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Trung Bình.";
+    //     diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Trung Bình.";
+    // } else if (diem1 < 8 || diem2 < 8) {
+    //     diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Khá!";
+    //     diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Khá!";
+    // } else {
+    //     diemGiuaKy = "Giữa kỳ " + diem1 + " điểm! Học lực Giỏi!!!";
+    //     diemCuoiKy = "Cuối kỳ " + diem2 + " điểm! Học lực Giỏi!!!";
+    // }
+
+    // alert(diemGiuaKy + diemCuoiKy);
+</script>
+</body>
+</html>

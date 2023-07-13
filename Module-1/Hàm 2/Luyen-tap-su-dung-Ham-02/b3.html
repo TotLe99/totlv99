@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm tính giai thừa của một số nguyên bất kỳ được đưa vào</h3>
+</body>
+</html>
+<script>
+    let number = parseInt(prompt('Nhập số cần tính GIAI THỪA'));
+    alert("Giai thừa số " + number + " = " + giaiThua(number));
+
+    function giaiThua(number) {
+        if (number == 0) {
+            return 1;
+        }
+        return number * giaiThua(number - 1);
+    }
+</script>

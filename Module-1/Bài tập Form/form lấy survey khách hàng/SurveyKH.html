@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="styleOfSurveyKH.css">
+</head>
+<body>
+<h2 style="font-weight: normal;font-size: 160%;margin: 0 0 5px 0;">Market Research Survey</h2>
+<p style="font-size: 95%; color: #555;line-height: 135%;margin-top: 0">Please take a few moments to complete this satisfaction survey.</p>
+<hr>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="get">
+    <strong>What is your age range?</strong><br>
+    <select name="ageRange">
+        <option value="age">18-24</option>
+        <option value="age">25-34</option>
+        <option value="age">35-50</option>
+        <option value="age">50+</option>
+    </select> <br><br>
+    <strong>What is your yearly income range?</strong> <br>
+    <select name="incomeRange">
+        <option value="income">$0 - $25,000</option>
+        <option value="income">$25,001 - $50,000</option>
+        <option value="income">$50,001 - $100,000</option>
+        <option value="income">$100,000+</option>
+    </select> <br><br>
+
+    <strong>Gender</strong> <br>
+    <label><input name="gender" type="radio"> Male </label><br>
+    <label><input name="gender" type="radio"> Female</label> <br>
+    <label><input name="gender" type="radio"> Nonbinary</label> <br>
+    <label><input name="gender" type="radio"> Other</label> <br>
+    <input name="gender" type="text" style="display: block;"> <br> <br>
+
+    <strong>Which of the following products have your pủchased in the last 2 months. Pleas check all that apply</strong> <br>
+    <label><input name="product" type="checkbox"> Product 1</label> <br>
+    <label><input name="product" type="checkbox"> Product 2</label> <br>
+    <label><input name="product" type="checkbox"> Product 3</label> <br> <br>
+
+    <strong>How often would you use our new product?</strong> <br>
+    <label><input name="time" type="radio"> Daily</label> <br>
+    <label><input name="time" type="radio"> Weekly</label> <br>
+    <label><input name="time" type="radio"> Monthly</label> <br> <br>
+
+    <strong>What would you pay for the new product?</strong> <br>
+    $ <input name="dollar" style="width:70px">.<input name="cents" style="width: 10px"> <br>
+    <span style="margin: 12px; font-size: 95%; color: #555;line-height: 135%">Dollars</span>
+    <span style="margin: 19px; font-size: 95%; color: #555;line-height: 135%">Cent</span>
+    <br>
+
+
+    <strong>What features would you like to see in the new product.</strong> <br>
+    <textarea cols="10" rows="5"> </textarea> <br> <br>
+
+    <span>Pleas rate your level of agreenment with the following statements</span>
+    <br>
+
+    <table>
+        <tr>
+            <th> </th>
+            <td style="width: 200px">Strongly Disagree</td>
+            <td style="width: 200px">Disagree</td>
+            <td style="width: 200px">Agree</td>
+            <td style="width: 200px">Strongly Agree</td>
+        </tr>
+        <tr>
+            <th>Our product are priced fairly.</th>
+            <td><input name="1" type="radio"><br>1</td>
+            <td><input name="1" type="radio"><br>2</td>
+            <td><input name="1" type="radio"><br>3</td>
+            <td><input name="1" type="radio"><br>4</td>
+        </tr>
+        <tr>
+            <th>Our product are high quality.</th>
+            <td><input name="2" type="radio"><br>1</td>
+            <td><input name="2" type="radio"><br>2</td>
+            <td><input name="2" type="radio"><br>3</td>
+            <td><input name="2" type="radio"><br>4</td>
+        </tr>
+        <tr>
+            <th>You would recommend our product to a friend or coworker.</th>
+            <td><input name="3" type="radio"><br>1</td>
+            <td><input name="3" type="radio"><br>2</td>
+            <td><input name="3" type="radio"><br>3</td>
+            <td><input name="3" type="radio"><br>4</td>
+        </tr>
+    </table>
+    <br>
+    <button name="submit">Submit</button>
+</form>
+
+</body>
+</html>

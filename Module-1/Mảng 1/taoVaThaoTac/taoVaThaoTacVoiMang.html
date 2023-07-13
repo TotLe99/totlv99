@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và thao tác với mảng</title>
+</head>
+<body>
+<h1>Tạo và thao tác với mảng</h1>
+<input id="text" value="">
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="display()">Display</button>
+<br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    let x = 0;
+    let array = Array();
+
+    function add() {
+        array[x] = document.getElementById("text").value;
+        alert("Phần tử: " + array[x] + " đã thêm vào Vị trí " + x);
+        x++;
+        document.getElementById("text").value = "";
+    }
+    
+    function display() {
+        let e = "<hr>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Vị trí " + i + " có Phần Tử = " + array[i] + "<br>";
+        }
+        document.getElementById("result").innerHTML= e;
+    }
+</script>

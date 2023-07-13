@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+Nhập số phút đã gọi: <input id="phut" value=""> <br><br>
+<button type="button" onclick="cuocDT()">Check</button>
+<br><br>
+<p id="result"></p>
+
+</body>
+</html>
+<script>
+
+
+    function cuocDT() {
+        let soPhut = parseInt(document.getElementById("phut").value);
+        let phi;
+        let tongSoTien;
+        const phiCoDinh = 25;
+        let result = document.getElementById("result");
+        if (soPhut > 200) {
+            phi = (soPhut - 200) * 200 + 50 * 400 + 100 * 600 + phiCoDinh;
+            if (soPhut > 150)
+                phi = (soPhut - 150) * 400 + 100 * 600 + phiCoDinh;
+            if (soPhut > 50)
+                phi = (soPhut - 50) * 600 + phiCoDinh;
+        } else {
+            phi = soPhut * phiCoDinh;
+        }
+        result.innerText = "Bạn đã gọi " + soPhut + " phút. Số tiền phải nộp là " + phi + " $"
+    }
+</script>

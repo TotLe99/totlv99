@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược</h3>
+</body>
+</html>
+<script>
+    let arr = [2, 6, 2, 9, 10, 6, 4, 9]
+
+    document.write("Arr = [" + arr.join(", ") + "]" + "<br>")
+    document.write("Arr = [" + reverseArr(arr).join(", ") + "]" + "<br>")
+    function reverseArr() {
+        let Arr2 = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+           Arr2.push(arr[i]);
+        }
+        return Arr2;
+    }
+</script>

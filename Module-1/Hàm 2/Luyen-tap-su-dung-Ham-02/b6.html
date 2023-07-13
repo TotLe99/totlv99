@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>kiểm tra xem nếu số đưa vào có phải là nguyên dương không</h3>
+</body>
+</html>
+<script>
+    let number = parseInt(prompt("Nhập số"));
+
+    document.write(checkSoDuong(number));
+    function checkSoDuong(number) {
+        if (number > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>

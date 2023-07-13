@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm Nhuận</title>
+</head>
+<body>
+ <script>
+     let year = parseInt(prompt("Nhập năm"));
+     let nhuanYear = false;
+
+     let yearDisvisibleBy4 = year % 4 == 0;
+     if (yearDisvisibleBy4) {
+         let yearDisvisibleBy100 = year % 100 == 0;
+         if (yearDisvisibleBy100) {
+             let yearDisvisibleBy400 = year % 400 == 0;
+             if (yearDisvisibleBy400) {
+                 nhuanYear = true;
+             }
+         } else {
+             nhuanYear = true
+         }
+     }
+
+     if (nhuanYear) {
+         alert(year + " là năm Nhuận!")
+     } else {
+         alert(year + " không phải năm Nhuận.")
+     }
+ </script>
+</body>
+</html>

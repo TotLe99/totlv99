@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị lớn nhất trong 3 số</title>
+</head>
+<body>
+  <script>
+    let number_1 = parseInt(prompt("Nhập số thứ 1"));
+    let number_2 = parseInt(prompt("Nhập số thứ 2"));
+    let number_3 = parseInt(prompt("Nhập số thứ 3"));
+    let result = "";
+
+    if (number_1 > number_2 && number_1 > number_3) {
+      result = "Số " + number_1 + " là MAX";
+    } else if ( number_2 > number_1 && number_2 > number_3) {
+      result = "Số " + number_2 + " là MAX";
+    } else {
+      result = "Số " + number_3 + " là MAX";
+    }
+
+    alert(result);
+  </script>
+</body>
+</html>

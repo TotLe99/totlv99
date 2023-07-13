@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="fake()" style="text-align: center;">
+<h3>Type anthing slowly</h3>
+<form>
+    <label>
+        <textarea cols="30" rows="5" id="txt"></textarea>
+    </label>
+</form>
+</body>
+</html>
+<script>
+    let array = ['Y', 'o', 'u', ' ', 'a', 'r', 'e', ' ', 'a', 'm', 'a', 'z', 'i', 'n', 'g', '!']; //16
+    let str = "";
+
+    function fake() {
+        let text = document.getElementById("txt").value;
+        let j = text.length;
+        if (j > 0) {
+            for (let i = 0; i <= j; i++) {
+                str += array[i];
+                if (i == 16) {
+                    document.getElementById("txt").value = "";
+                    str = "";
+                }
+            }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+        setTimeout("fake()", 25);
+    }
+
+
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = [1, 2, 3, 4, 5];
+    let first = 0;
+    let last = n.length - 1;
+    while (first < last) {
+        let a = n[first]; //Chai rỗng
+        n[first] = n[last];
+        n[last] = a;
+        first ++;
+        last --;
+    }
+    console.log(n);
+</script>

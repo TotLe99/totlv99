@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3> Đảo ngược các phần tử trong mảng</h3>
+</body>
+</html>
+<script>
+    let array = [5, 6, 1, 9, 10, 13, 19, 9, 1, 5];
+    let array_reverse = [];
+
+    for (let i = array.length - 1; i >= 0; i--) {
+        array_reverse.push(array[i]);
+    }
+    document.write("Mảng [" + array.join(", ") + "]" + "<br>")
+    document.write("Sau khi đảo ngược: [" + array_reverse.join(", ") + "]");
+</script>

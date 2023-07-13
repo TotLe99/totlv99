@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tạo một class Circle để tính diện tích và chu vi của một hình tròn.</h3>
+</body>
+</html>
+<script>
+  class Circle {
+    radius;
+
+    constructor(radius) {
+      this.radius = radius;
+    }
+
+    hienThi() {
+      document.write("Bán kính = " + this.radius);
+    }
+
+    dienTich() {
+      document.write("<br>Diện tích = " + (this.radius * this.radius * Math.PI))
+    }
+
+    chuVi() {
+      document.write("<br>Chu vi = " + (2 * this.radius * Math.PI))
+    }
+  }
+
+  let radius = parseFloat(prompt("Nhập bán kính hình tròn"));
+  let circle = new Circle(radius);
+  circle.hienThi();
+  circle.chuVi();
+  circle.dienTich();
+</script>

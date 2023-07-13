@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Giá trị lớn nhất trong mảng và vị trí của phần tử</h3>
+</body>
+</html>
+<script>
+    let array = [5, 6, 1, 9, 10, 13, 19, 9, 1, 5];
+    let max_array = [0];
+    let index_max = 0;
+    for (let i = 1; i < array.length; i++) {
+        if (max_array < array[i]) {
+            max_array = array[i];
+            index_max = i;
+        }
+    }
+    document.write("Mảng [" + array.join(", ") + "]" + "<br>")
+    document.write("Số lớn nhất = " + max_array + " ở vị trí = " + (index_max + 1));
+</script>

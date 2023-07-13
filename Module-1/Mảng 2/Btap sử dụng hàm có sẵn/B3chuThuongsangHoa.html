@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyển chữ thường sang chữ HOA</h1>
+<hr>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    let string = prompt("Nhập chữ")
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for (let x = 0; x < string.length; x++) {
+        if (UPPER.indexOf(string[x]) !== -1) {
+            result.push(string[x].toLowerCase());
+        } else if (LOWER.indexOf(string[x]) !== -1) {
+            result.push(string[x].toUpperCase());
+        } else {
+            result.push(string[x]);
+        }
+    }
+    document.writeln(result.join(''));
+</script>

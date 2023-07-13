@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đơn giản</title>
+    <link rel="stylesheet" type="text/css" href="styleOfPhan1.css">
+</head>
+<body>
+<form>
+
+    <table class="t1">
+        <tr class="tieude">
+            <th colspan="2">SỞ THÍCH CÁ NHÂN</th>
+        </tr>
+        <tr>
+            <th style="text-align:right">Họ và tên</th>
+            <td><input name="yourname" size="30"></td>
+        </tr>
+        <tr>
+            <th style="text-align:right">Email</th>
+            <td><input name="email"></td>
+        </tr>
+    </table>
+    <table class="t2">
+        <tr>
+            <th rowspan="2" style="text-align:right; vertical-align: top">Sở thích</th>
+            <td rowspan="2" style="text-align:left; vertical-align: top" size="20px">
+                <input name="hobby" type="checkbox">Thể thao<br>
+                <input name="hobby" type="checkbox">Lướt web<br>
+                <input name="hobby" type="checkbox">Du lịch <br></td>
+
+
+            <td style="text-align:left; vertical-align: top"><input name="hobby" type="checkbox">Âm nhạc<br>
+                <input name="hobby" type="checkbox">Chơi game <br>
+            </td>
+
+            <td style="text-align:left; vertical-align: top"><input name="hobby" type="checkbox">Đọc sách<br>
+                <input name="hobby" type="checkbox">Điện ảnh <br></td>
+        </tr>
+    </table>
+
+    <table class="t3">
+        <tr>
+            <td style="text-align:center">
+                <button name="submitForm" type="submit">Gửi thông tin</button>
+                <button name="resetForm" type="reset">Nhập lại</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>
+</html>

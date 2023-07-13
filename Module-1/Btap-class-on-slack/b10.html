@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tạo một class Movie để lưu trữ thông tin về một bộ phim như tên, đạo diễn, diễn viên, thể loại</h3>
+</body>
+</html>
+<script>
+    class Movie {
+        name;
+        author;
+        performer;
+        genre;
+
+        constructor(name, author, performer, genre) {
+            this.name = name;
+            this.author = author;
+            this.performer = performer;
+            this.genre = genre;
+        }
+
+        display() {
+            document.write("Phim: " + this.name + "<br>Đạo diễn: " + this.author
+                + "<br>Diễn viên: " + this.performer
+                + "<br>Thể loại: " + this.genre + "<hr>")
+        }
+    }
+
+    let movie1 = new Movie("Nắng", "ĐG","nhiều người", "Tìn cảm")
+    let movie2 = new Movie("Naruto", "ĐG","Chịu", "Anime, Hành động")
+    let movie3 = new Movie("Quá nhanh, quá nguy hiểm", "ĐG","Rất nhiều người", "Bom tấn")
+
+    movie1.display();
+    movie2.display();
+    movie3.display();
+</script>

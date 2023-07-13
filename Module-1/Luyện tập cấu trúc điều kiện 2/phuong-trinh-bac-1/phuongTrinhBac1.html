@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+ <h1>Phương trình: ax + b = 0</h1>
+<p>Nhập số a: <input id="soA" value=""></p>
+<p>Nhập số b: <input id="soB" value=""></p>
+<button onclick="check()" type="button">Kiểm tra</button>
+<br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+
+   function check() {
+     let a = parseFloat(document.getElementById("soA").value);
+     let b = parseFloat(document.getElementById("soB").value);
+     let result = document.getElementById("result");
+     let x;
+
+     if (a == 0 && b == 0){
+       result.innerText = "Phương trình vô nghiệm";
+     }
+     else if (a != 0 && b == 0){
+       result.innerText = "Phương trình có nghiệm x = 0";
+     }
+     else if (a == 0 && b != 0){
+       result.innerText = "Phương trình vô nghiệm";
+     }
+     else {
+       result.innerText = "Phương trình có nghiệm x = " + (x = -b / a);
+     }
+   }
+</script>

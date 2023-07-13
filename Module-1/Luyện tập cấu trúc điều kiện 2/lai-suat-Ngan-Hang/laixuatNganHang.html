@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi xuất ngân hàng</title>
+</head>
+<body>
+<h1>Lãi xuất Ngân Hàng hàng năm</h1>
+<p>Nhập số tiền: <input id="money" value=""></p>
+<p>Nhập số năm gửi: <input id="year" value=""></p>
+<button type="button" onclick="check()">Kiểm tra</button>
+<br><br>
+<p id="result1"></p>
+<p id="result2"></p>
+</body>
+</html>
+<script>
+    function check() {
+        let money = parseFloat(document.getElementById("money").value);
+        let year = parseFloat(document.getElementById("year").value);
+        let result1 = document.getElementById("result1");
+        let result2 = document.getElementById("result2");
+        const r = 8/100;
+        const n = 4;
+
+        let amount = money * Math.pow(1 + (r / n), n * year);
+        let cinterest = amount - money;
+        result1.innerText = "Lãi kép sau " + year + " năm là " + cinterest;
+        result2.innerText = "Số tiền có được sau " + year + " năm là " + amount;
+    }
+</script>

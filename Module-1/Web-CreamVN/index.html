@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cream.vn</title>
+    <link rel="stylesheet" href="css/menu-cream.css"/>
+    <link
+            rel="shortcut icon"
+            href="https://cream.vn/images/favicon.png"
+            type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/header.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/caption.css"/>
+    <link rel="stylesheet" href="css/menu-2-cream.css"/>
+    <link rel="stylesheet" href="css/khach.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/shake-runglac.css">
+</head>
+<body>
+<div class="container">
+    <!--    Box Login-->
+    <div class="wrapper">
+        <span class="icon-close"><i class='bx bx-x'></i></span>
+
+        <div class="form-box login">
+            <h2>Tài Khoản</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bxs-envelope'></i></span>
+                    <input id="username-login" type="text" required>
+                    <label>Tên đăng nhập/Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bxs-lock-alt'></i></span>
+                    <input id="password-login" type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lưu tài khoản</label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <div>
+                    <button onclick="Login()" type="submit" class="btn-login">Đăng Nhập</button>
+                </div>
+                <div class="login-register">
+                    <p>Bạn chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Tạo Tài Khoản Mới</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bxs-user-plus'></i></span>
+                    <input id="username-register" type="text" required>
+                    <label>Tên tài khoản</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bxs-envelope'></i></span>
+                    <input id="email-register" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bxs-lock-alt'></i></span>
+                    <input id="password-register" type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Tôi đồng ý với các Điều khoản & Điều kiện</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn-login" onclick="Register()">Đăng Ký</button>
+                </div>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--    body-->
+    <div class="btnLogin shake-Login">
+        <button class="btnLogin-Popup"><i class='bx bxs-user-account'></i></button>
+    </div>
+    <div class="messenger shake-Messenger">
+        <button title="Chat Messenger"><i class='bx bxs-chat'
+                                          onclick="window.open('https://m.me/khongco.tenhay.90/')"></i>
+        </button>
+    </div>
+    <div class="scroll-to-top">
+        <a href="#"> <span class="fas fa-angle-up"></span> </a>
+    </div>
+    <header>
+        <div class="main-box">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li>
+                        <a href="#">Giới Thiệu</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" style="color: #4b4342">Về Chúng Tôi</a></li>
+                            <li>
+                                <a href="#" style="color: #4b4342">Đội Ngũ Nhân Viên</a>
+                            </li>
+                            <li><a href="#" style="color: #4b4342">Bảng giá</a></li>
+                            <li><a href="#" style="color: #4b4342">Các Loại Kem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Danh sách </a>
+                        <ul class="sub-menu">
+                            <li><a href="#" style="color: #4b4342">Masonry</a></li>
+                            <li><a href="#" style="color: #4b4342">Masonry Wide</a></li>
+                            <li><a href="#" style="color: #4b4342">Wide</a></li>
+                            <li><a href="#" style="color: #4b4342">With Filter</a></li>
+                            <li><a href="#" style="color: #4b4342">Two Columns</a></li>
+                            <li><a href="#" style="color: #4b4342">With Sidebar</a></li>
+                            <li><a href="#" style="color: #4b4342">Square</a></li>
+                            <li><a href="#" style="color: #4b4342">Singel Post</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Tin Tức</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" style="color: #4b4342">Checkerboard</a></li>
+                            <li><a href="#" style="color: #4b4342">Standard</a></li>
+                            <li><a href="#" style="color: #4b4342">Masonry</a></li>
+                            <li>
+                                <a href="#" style="color: #4b4342">Masonry Full Width</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color: #4b4342">Two Columns Grid</a>
+                            </li>
+                            <li>
+                                <a href="#" style="color: #4b4342">Three Columns Wide</a>
+                            </li>
+                            <li><a href="#" style="color: #4b4342">Post Types</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cửa Hàng</a>
+                        <ul class="sub-menu">
+                            <li><a href="#" style="color: #4b4342">Kem nè^^</a></li>
+                            <li><a href="#" style="color: #4b4342">Giỏ Hàng</a></li>
+                            <li><a href="#" style="color: #4b4342">Thanh Toán</a></li>
+                            <li><a href="#" style="color: #4b4342">Tài Khoản</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="outer-box">
+                <div class="cart">
+                    <a href="#" onclick="shopping()">
+                        <i class="fas fa-shopping-cart icon"></i>
+                    </a>
+                </div>
+                <div class="search">
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Tìm...">
+                        <button type="submit"><a href="#mid-2"></a><i class="fas fa-search icon"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- cap -->
+    <div class="caption">
+        <div class="cap-1">Chào mừng bạn đến với</div>
+        <div class="cap-2">Kem Bắc Cực</div>
+        <div class="cap-3">
+            We offer now a great range of different <br/>
+            flavoured bite-size pastries and cakes
+        </div>
+    </div>
+    <!-- mid-menu -->
+    <div class="mid-1">
+        <div class="diviver">
+            <img src="img/divider.png" alt="logo"/>
+        </div>
+        <div class="menu-cr">
+            <div class="menu-cr-1">
+                <div class="img-cr">
+                    <img src="img/kem-cafe.png" alt="1"/>
+                </div>
+                <h3>Kem Tươi Vị Cafe</h3>
+                <p>
+                    Vị ngọt béo của kem hoà quyện một chút đăng đắng của cafe khiến
+                    mónkem trở nên vô cùng hấp dẫn.
+                </p>
+                <div class="buy">
+                    <a href="#">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="menu-cr-1">
+                <div class="img-cr">
+                    <img src="img/kem-hoaQua.png" alt="2"/>
+                </div>
+                <h3>Kem Tươi Vị Hoa Quả</h3>
+                <p>
+                    Kem tươi vị hoa quả nhiệt đới với độ mềm mịn, mát lạnh, ngọt béo
+                    vô cùng thơm ngon và hấp dẫn.
+                </p>
+                <div class="buy">
+                    <a href="#">Xem Thêm</a>
+                </div>
+            </div>
+            <div class="menu-cr-1">
+                <div class="img-cr">
+                    <img src="img/kem-mix.png" alt="3"/>
+                </div>
+                <h3>Kem Tươi Mix Hương Vị</h3>
+                <p>
+                    Kem tươi mix hương vị đem đến một trải nghiệm mới lạ, sự bùng nổ
+                    về hương vị khiến người ta nhớ mãi.
+                </p>
+                <div class="buy">
+                    <a href="#">Xem Thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mid 2 -->
+    <div class="mid-2" id="mid-2">
+        <div class="title">
+            <div class="">
+                <img src="img/divider.png" alt="logo"/>
+            </div>
+            <h2>Kem Bắc Cực - Nhiều hương vị hơn, nhiều niềm vui hơn</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/1-9.jpg" alt="1"/></figure>
+                    <h3>Dapibus lecius</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/2.jpg" alt="2"/></figure>
+                    <h3>Morbi eros ligula</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/3.jpg" alt="3"/></figure>
+                    <h3>Suspendisse rhoncus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/4.jpg" alt="4"/></figure>
+                    <h3>Sodales tempus luctus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/5.jpg" alt="5"/></figure>
+                    <h3>Sit porta penatibus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/6.jpg" alt="6"/></figure>
+                    <h3>Quis nulla nulla</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/7.jpg" alt="7"/></figure>
+                    <h3>Consequat augue</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/8.jpg" alt="8"/></figure>
+                    <h3>Eu tellus eget</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/9.jpg" alt="9"/></figure>
+                    <h3>Dapibus lectus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/10.jpg" alt="10"/></figure>
+                    <h3>Dapibus lectus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/11.jpg" alt="11"/></figure>
+                    <h3>Dapibus lectus</h3>
+                </a>
+
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure><img src="imgcr/12.jpg" alt="12"/></figure>
+                    <h3>Dapibus lectus</h3>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="mid-3">
+        <div class="title-2">
+            <div class="">
+                <img src="img/divider.png" alt="logo"/>
+            </div>
+            <h2>Đánh Giá Của Khách Hàng</h2>
+        </div>
+        <div class="row-2">
+            <div class="khach">
+                <div class="anh">
+                    <figure><img src="img/khach-1.png" alt="1"/></figure>
+                </div>
+                <div class="text">
+                    Không biết vì gì mà mỗi khi chán nản mình chỉ cần ăn một chiếc kem
+                    Bắc Cực là lại thấy thoải mái, vui vẻ ngay tức thì!
+                </div>
+                <div class="ten">Thảo Anh</div>
+            </div>
+            <div class="khach">
+                <div class="anh">
+                    <figure><img src="img/khach-2.png" alt="2"/></figure>
+                </div>
+                <div class="text">
+                    Thời tiết nắng nóng, oi bức và khó chịu, ấy thế mà chỉ cần một que
+                    kem Bắc Cực mát lành, cảm giác oi ả bỗng chốc dịu lại.
+                </div>
+                <div class="ten">Min Phạm</div>
+            </div>
+            <div class="khach">
+                <div class="anh">
+                    <figure><img src="img/khach-3.png" alt="3"/></figure>
+                </div>
+                <div class="text">
+                    Kem Bắc Cực luôn là món kem ưa thích của mình. Mỗi lần tụ tập cùng
+                    hội bạn thì chúng mình luôn ghé ăn kem rồi đi lượn 1 vòng.
+                </div>
+                <div class="ten">Mai Sương</div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="infor">
+            <ul class="mxh">
+                <li>
+                    <a href="https://www.facebook.com/khongco.tenhay.90/"><i class="fab fa-facebook icon-2"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/biet_dat_ten_gi_day/"><i class="fab fa-instagram icon-2"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-pinterest icon-2"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter icon-2"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="tex">
+            <strong>Kem Bắc Cực - Hương Vị Đi Cùng Năm Tháng</strong>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+<script src="js/classUser.js"></script>
+<script src="js/managerUser.js"></script>
+<script src="js/JsOfLogin.js"></script>

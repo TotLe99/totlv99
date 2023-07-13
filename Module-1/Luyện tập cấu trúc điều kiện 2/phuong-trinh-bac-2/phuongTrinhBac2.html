@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số a: <input id="soA" value=""> <br><br>
+Nhập số b: <input id="soB" value=""> <br><br>
+Nhập số c: <input id="soC" value=""> <br><br>
+<button onclick="giaiPTBac2()" type="button">Kiểm tra</button>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function giaiPTBac2() {
+        let a = parseFloat(document.getElementById("soA").value);
+        let b = parseFloat(document.getElementById("soB").value);
+        let c = parseFloat(document.getElementById("soC").value);
+        let delta = parseFloat(b * b - 4 * a * c);
+        let candelta = Math.sqrt(delta);
+        let result = document.getElementById("result");
+        let x1, x2;
+        if (delta > 0) {
+            x1 = (-b + candelta) / (2 * a);
+            x2 = (-b - candelta) / (2 * a);
+            result.innerText = "Phương trình có 2 nghiệm phân biệt x1 = " + x1 + " và x2 = " + x2;
+        } else if (delta == 0) {
+            x1 = -b / (2 * a);
+            x2 = -b / (2 * a);
+            result.innerText = "Phương trình có nghiệm kép là x1 = " + x1 + " = x2 = " + x2;
+        } else {
+            result.innerText = "Vô nghiệm";
+        }
+    }
+</script>

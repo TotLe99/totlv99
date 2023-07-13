@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Chương trình tìm xem V có nằm trong mảng số nguyên không</h3>
+</body>
+</html>
+<script>
+    let array = [5, 6, 1, 9, 10, 13, 19, 9, 1, 5];
+    let i = 0;
+
+    do {
+        let V = prompt("Nhập số cần tìm trong mảng");
+        if (V == array[i]) {
+            alert(V + " is in the array");
+            break;
+        } else {
+            alert(V + " is not in the array");
+        }
+    }
+    while (i < array.length)
+
+</script>

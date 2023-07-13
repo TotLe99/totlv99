@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+</head>
+<body>
+<h3>Xây dựng lớp mô tả điện thoại</h3>
+
+</body>
+</html>
+<script>
+    class Mobile {
+        name;
+        battery;
+        currentText;
+        status = false;
+        sent = [];
+        inboxText = [];
+
+        constructor(name, battery) {
+            this.name = name;
+            this.battery = battery;
+        }
+
+        checkStatus() {
+            if (this.status) {
+                return "ON"
+            } else {
+                return "OFF"
+            }
+        }
+
+        powerSwitch() {
+            this.status = !this.status;
+        }
+
+        texting(text) {
+            if (this.status) {
+                this.currentText = text;
+                this.battery -= 1;
+            } else {
+                alert("Điện thoại tắt")
+            }
+        }
+
+        sendText(toMobile) {
+            if (this.status) {
+                toMobile.inboxText.push(this.currentText);
+                this.sent.push(["to" + toMobile.name, this.currentText]);
+                this.battery -= 1;
+            } else {
+                alert("Điện thoại tắt")
+            }
+        }
+
+        checkInbox() {
+            if (this.status) {
+                document.write(this.name + " Inbox: <br>");
+                for (let i = 0; i < this.inboxText.length; i++) {
+                    document.write(this.inboxText[i] + "<br>");
+                }
+                this.battery -= 1;
+            } else {
+                alert("Điện thoại tắt")
+            }
+        }
+
+        checkSent() {
+            if (this.status) {
+                document.write(this.name + " Sent: <br>");
+                for (let i = 0; i < this.sent.length; i++) {
+                    document.write(this.sent[i] + "<br>");
+                }
+                this.battery -= 1;
+            } else {
+                alert("Điện thoại tắt")
+            }
+        }
+    }
+
+    let nokia = new Mobile("Nokia", 100);
+    let iphone = new Mobile("Iphone", 100);
+    nokia.powerSwitch();
+    iphone.powerSwitch();
+
+    let textNokia = prompt("Soạn tin nhắn đt Nokia");
+    nokia.texting(textNokia);
+    nokia.sendText(iphone);
+
+    nokia.checkSent();
+    iphone.checkInbox();
+
+    document.write("<br>" + nokia.name + " battery = " + nokia.battery);
+    document.write("<br>" + iphone.name + " battery = " + iphone.battery);
+
+    console.log(nokia);
+    console.log(iphone);
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )</h3>
+</body>
+</html>
+<script>
+    let arr = [1, 5, 3, 8, "-", "-", 5, "-", 9]
+    let string_arr = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        string_arr += arr[i];
+    }
+
+    document.write(string_arr + "<br>")
+    document.write(string_arr.replace(/-/g, '_'))
+</script>

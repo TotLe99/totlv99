@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Circle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3; position:fixed;" ></canvas>
+</body>
+</html>
+<script>
+
+function Circle(x, y, radius){
+  this.x = x;
+  this.y = y;
+  this.radius = radius;
+
+
+}
+
+//Them mau ngau nhien
+function getRandomHex() {
+  return Math.floor(Math.random() * 255);
+}
+function getRandomColor() {
+  let red = getRandomHex();
+  let green = getRandomHex();
+  let orange = getRandomHex();
+  return "rgb(" + red +"," + green + "," + orange + ")";
+}
+
+//Ve hinh tron
+function createCircle() {
+  let ctx = document.getElementById('myCanvas').getContext('2d')
+  let radius = Math.floor(Math.random() * 80)  //kich thuoc ngau nhien
+  let x = Math.random() * window.innerWidth //vị trí ngẫu nhiên
+  let y = Math.random() * window.innerHeight
+  let circle = new Circle(x, y, radius)
+  ctx.beginPath();
+  ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+  ctx.fillStyle = getRandomColor();
+  ctx.fill();
+}
+
+//Tạo nhiều hình tròn (29 hình)
+function createMultipleCircle() {
+  for (let i = 0; i < 30; i++) {
+    createCircle()
+  }
+}
+createMultipleCircle()
+
+</script>

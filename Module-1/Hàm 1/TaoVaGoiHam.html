@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sử dụng hàm confirm để nhận thông tin đầu vào và đưa ra quyết định dựa trên những thông tin đó.</h1>
+</body>
+</html>
+<script>
+    function chess(answer) {
+        let string = "";
+        if (answer) {
+            string = "Play chess";
+        } else {
+            string = "Để lúc khác";
+        }
+        return string;
+    }
+
+    let box = confirm("Bạn muốn chơi chess không?");
+    let result = chess(box);
+
+    alert(result);
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>In dãy Fibonaci</h3>
+</body>
+</html>
+<script>
+    let num1 = 0, num2 = 1, nextTerm;
+    let n = prompt("Nhập số lượng Fibonaci");
+
+    for (let i = 0; i < n; i++) {
+        document.write(num1 + "  ")
+        nextTerm = num1 + num2
+        num1 = num2
+        num2 = nextTerm
+    }
+</script>

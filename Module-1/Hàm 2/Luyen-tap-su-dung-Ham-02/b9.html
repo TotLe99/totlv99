@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,<br>
+    kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không</h3>
+</body>
+</html>
+<script>
+    let arr = ['I', 'a', 'm' , 's', 'o', 'r', 'r', 'y']
+    let kyTu = prompt("Nhập ký tự cần kiểm tra")
+    let luu_arr = [];
+    function checkKytu(arr, kyTu) {
+        for (let i = 0; i < arr.length; i++) {
+            if (kyTu === arr[i]) {
+                luu_arr.push(i + 1)
+            }
+        }
+        if (luu_arr !== []) {
+            return luu_arr;
+        }
+        return -1;
+    }
+    document.write(checkKytu(arr, kyTu))
+</script>

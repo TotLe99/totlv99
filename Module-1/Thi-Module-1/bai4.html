@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hinh tron</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3; position:fixed;"></canvas>
+</body>
+</html>
+<script>
+    class Circle {
+        x;
+        y;
+        radius;
+        color;
+
+        constructor(x, y, radius, color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+        }
+
+    }
+
+    function createCircle() {
+        let ctx = document.getElementById('myCanvas').getContext('2d');
+        let circle = new Circle(50, 50, 80, '#00000');
+        ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = circle.color;
+        ctx.fill();
+    }
+
+    createCircle();
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Chuyển đổi giữa feet và meters</h3>
+</body>
+</html>
+<script>
+    let feet = parseFloat(prompt("Nhập Feet"))
+    let meter = parseFloat(prompt("Nhập meter"))
+
+    function feetToMeter(feet) {
+        meter = 0.305 * feet;
+        return meter;
+    }
+
+    function meterToFeet(meter) {
+        feet = 3.279 * meter;
+        return feet;
+    }
+
+    document.write(feet + "feet = " + feetToMeter(feet) + "meter <br>")
+    document.write(meter + "feet = " + meterToFeet(meter) + "feet")
+</script>

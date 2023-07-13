@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://media.wired.com/photos/61bd0002d4903f250483aa59/191:100/w_1280,c_limit/GettyImages-1017160728.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.score-box{
+    font-size: 25px;
+    text-align: right;
+    color: greenyellow;
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ Mét sang Feet</title>
+</head>
+<body>
+<h1>Chuyển từ Mét sang Feet</h1>
+Nhập số Mét: <input id="met" value=""> <br><br>
+<button type="button" onclick="change()">Change</button> <br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+  function change() {
+      let met = parseFloat(document.getElementById("met").value);
+      let result = document.getElementById("result");
+      const n = 3.2808;
+      let feet= met * n;
+      result.innerText = "Feet = " + feet;
+  }
+</script>

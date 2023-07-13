@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích Tam Giác vuông</title>
+</head>
+<body>
+Nhập cạnh a: <input id="canhA" value=""> <br><br>
+Nhập cạnh b: <input id="canhB" value=""> <br><br>
+<button onclick="dientich()" type="button">Diện Tích</button> <br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+
+  function dientich() {
+    let a = parseFloat(document.getElementById("canhA").value);
+    let b = parseFloat(document.getElementById("canhB").value);
+    let result = document.getElementById("result");
+    let dientichTGV;
+    dientichTGV = (a * b) / 2;
+    result.innerText = "Diện tích Tam Giác Vuông = " + dientichTGV;
+  }
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong So Nguyen To</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let x = parseInt(prompt("Nhập x số nguyên tố đầu tiên: "));
+
+    function sumOfListPrime(x) {
+        let count = 0;
+        let count_SNT = 0;
+        let sum = 0;
+        for (let i = 2; i <= 1000; i++) {
+            if (count_SNT < x) {
+                for (let j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        count += 1;
+                    }
+                }
+                if (count == 2) {
+                    document.write(i + "<br>");
+                    count_SNT += 1;
+                    sum += i;
+                }
+                count = 0;
+            } else {
+                break;
+            }
+        }
+        return sum;
+    }
+
+    alert("Sum = " + sumOfListPrime(x));
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Viết hàm tryRemoveFromArray() nhận vào một mảng và một số nguyên index,<br>
+    trả về mảng ban đầu đã được loại bỏ phần tử tại vị trí index nếu index hợp lệ.<br>
+    Nếu index không hợp lệ, trả về mảng ban đầu.(không dùng hàm có sẵn để xoá mảng)
+</h3>
+</body>
+</html>
+<script>
+    let arr = [4, 9, 9, 1, 6, 3, 5];
+    // let index_arr = 0;
+    let remove = prompt("Nhập phần tử muốn xoá")
+
+    document.write(tryRemoveFromArray(arr, remove))
+
+    function tryRemoveFromArray(arr, remove) {
+        let arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (remove !== arr[i]) {
+                arr2.push(arr[i]);
+            }
+            i--;
+        }
+        return arr2;
+    }
+</script>

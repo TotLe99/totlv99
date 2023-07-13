@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</h3>
+</body>
+</html>
+<script>
+    let a = parseInt(prompt("Nhập sô a"))
+    let b = parseInt(prompt("Nhập sô b"))
+    let c = parseInt(prompt("Nhập sô c"))
+
+    document.write("Min = " + minNumber(a, b, c))
+
+    function minNumber(a, b, c) {
+        let min = a;
+        if (min > b) {
+            min = b;
+        } else if (min > c) {
+            min = c;
+        }
+        return min;
+    }
+</script>

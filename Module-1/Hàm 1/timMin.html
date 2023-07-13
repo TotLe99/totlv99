@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tìm giá trị nhỏ nhất của mảng</h1>
+</body>
+</html>
+<script>
+    function minArray(arr) {
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (min > arr[i])
+                min = arr[i];
+        }
+        return min;
+    }
+
+    //mảng 1
+    let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    document.write('Arr1 = [' + arr1.join(", ") + ']' + '<br>');
+    let minArr1 = minArray(arr1);
+    document.write('arr1 có min = ' + minArr1 + "<br><br>");
+
+    //mảng 2
+    let arr2 =[7, 12, 6, 9, 20, 56, 89];
+    document.write('arr2 = [' + arr2.join(", ") + ']' + '<br>');
+    let minArr2 = minArray(arr2);
+    document.write('arr2 có min = ' + minArr2 + "<br><br>");
+
+    //mảng 3
+    let arr3 = [];
+    document.write('arr3 = [' + arr3.join(", ") + ']' + '<br>');
+    let minArr3 = minArray(arr3);
+    document.write('arr3 có min = ' + minArr3 + "<br><br>");
+
+    //mảng 4
+    let arr4 = [0, 0, 0, 0, 0, 0]
+    document.write('arr4 = [' + arr4.join(", ") + ']' + '<br>');
+    let minArr4 = minArray(arr4);
+    document.write('arr4 có min = ' + minArr4 + "<br><br>");
+</script>

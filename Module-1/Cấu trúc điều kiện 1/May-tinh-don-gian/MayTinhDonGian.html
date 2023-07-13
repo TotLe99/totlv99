@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+      input {
+        width: 50px;
+      }
+    </style>
+</head>
+<body>
+  <form>
+    <input type="text" id="view" style="width: 200px">
+
+    <table>
+      <tr>
+        <td><input type="button" value="1" onclick="inputValue(value)"></td>
+        <td><input type="button" value="2" onclick="inputValue(value)"></td>
+        <td><input type="button" value="3" onclick="inputValue(value)"></td>
+        <td><input type="button" value="+" onclick="inputValue(value)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="inputValue(value)"></td>
+        <td><input type="button" value="5" onclick="inputValue(value)"></td>
+        <td><input type="button" value="6" onclick="inputValue(value)"></td>
+        <td><input type="button" value="-" onclick="inputValue(value)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="inputValue(value)"></td>
+        <td><input type="button" value="8" onclick="inputValue(value)"></td>
+        <td><input type="button" value="9" onclick="inputValue(value)"></td>
+        <td><input type="button" value="*" onclick="inputValue(value)"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="C" onclick="xoa()"></td>
+        <td><input type="button" value="0" onclick="inputValue(value)"></td>
+        <td><input type="button" value="=" onclick="result()"></td>
+        <td><input type="button" value="/" onclick="inputValue(value)"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+<script src="MayTinhDonGian.js"></script>

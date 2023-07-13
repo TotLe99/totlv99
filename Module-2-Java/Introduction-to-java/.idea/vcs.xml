@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BTap-LoiChao" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Btap-Doc-So-Thanh-Chu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Btap-DoiTien" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Khai-Bao-Bien" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Kiem-tra-nam-Nhuan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Phuong-trinh-bac-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TimeDate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tinh-So-Ngay-Trong-Thang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tinh-chi-so-BMI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Toan-tu" vcs="Git" />
+  </component>
+</project>

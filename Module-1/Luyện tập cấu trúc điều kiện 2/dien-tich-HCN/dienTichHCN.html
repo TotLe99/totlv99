@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích hình chữ nhật</title>
+</head>
+<body>
+Nhập cạnh a: <input id="canhA" value=""> <br><br>
+Nhập cạnh b: <input id="canhB" value=""> <br><br>
+<button onclick="dientich()" type="button">Diện tích</button> <br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+
+  function dientich() {
+      let a = parseInt(document.getElementById("canhA").value);
+      let b = parseInt(document.getElementById("canhB").value);
+      let dientichHCN;
+      let result = document.getElementById("result");
+      dientichHCN = a * b;
+      result.innerText = "Diện tích Hình Chữ Nhật = " + dientichHCN;
+  }
+</script>

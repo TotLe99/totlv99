@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>In các ký tự trong một mảng theo thứ tự đảo ngược</h3>
+</body>
+</html>
+<script>
+    let arr = ['c', 's', 'c', '2', '6', '1'];
+    let reverse = "";
+    document.write("Arr = [" + arr.join(", ") + "]" + "<br>")
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reverse += arr[i];
+    }
+    document.write("Sau khi đảo ngược: " + reverse);
+</script>

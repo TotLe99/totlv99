@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="702f53bf-6d83-4af7-9d24-ee13cbb6f713" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/Learn in Codegym.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hành-tinh-quay-quanh/VuTru.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hành-tinh-quay-quanh/VuTru.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hành-tinh-quay-quanh/VuTru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/[0] Bộ câu hỏi phỏng vấn cơ bản.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/[1] Bộ câu hỏi phỏng vấn module 1-BP2.0.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/goblin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập Form/Tạo form đơn giản/Phan1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập Form/Tạo form đơn giản/styleOfPhan1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập Form/form lấy survey khách hàng/SurveyKH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập Form/form lấy survey khách hàng/styleOfSurveyKH.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập Form/giao diện Form đăng ký/Formdangky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Chuyen-doC-sang-doF/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Chuyen-doC-sang-doF/doCsangdoF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Chuyen-doi-tien-te/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Chuyen-doi-tien-te/doiTien.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/May-tinh/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/May-tinh/mayTinh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Tinh-diem-trung-binh/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/Tinh-diem-trung-binh/diemTrungBinh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/phep-tinh-Hinh-Tron/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bài tập toán tử bằng Js/phep-tinh-Hinh-Tron/pheptinhHinhTron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cau-truc-lap-2/BangCuuChuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cau-truc-lap-2/dotuoi1den100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cau-truc-lap-2/soNguyenTo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cau-truc-lap-2/tinhTonghoacTichNhapVaoTuBanPhim.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/Do-You-Love-Me/doYouLoveMe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/Do-You-Love-Me/doYouLoveMe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/May-tinh-don-gian/MayTinhDonGian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/May-tinh-don-gian/MayTinhDonGian.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/Tính-BMI/BMI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/dang-nhap-he-thong/dangNhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/kiem-tra-nam-Nhuan/namNhuan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cấu trúc điều kiện 1/kiem-tra-so-ngay-trong-thang/soNgayTrongThang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML cơ bản/BasicHTML.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML cơ bản/CVcaNhan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML cơ bản/taoDanhSach.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML tạo Form/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML tạo Form/styleOfTableAdvance.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HTML tạo Form/tableAdvanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hàm 1/TaoVaGoiHam.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hàm 1/doFsangdoC.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hàm 1/timMin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hàm 2/FeetAndMeter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hàm 2/Luyen-tap-su-dung-Ham-01/b1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/B7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/b8GameDoanSo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/bai1-dem1den100-99hoanthanh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/chuoiFibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/dieuChinhNhietDo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/soDauTien%5TrongFibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-01/tongChuoiFibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-02/b1inFibonaci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-02/b2GiaiThua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-02/b4inHCN.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-02/b5LaiXuatNganHang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyen-tap-vong-lap-02/inTamGiacVuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/check-number-vs-0/checkvs0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/checkA%B/checkAchiahetB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/dieu-kien-vao-lop10/checkAgeGoToClass10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/tim-MAX-trong-3-so/timMax3So.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/tinh-cuoc-dien-thoai/tinhCuocDienThoai.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/tinh-tien-hoa-hong-10%/hoaHong10pt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập câu trúc điều kiện 1/xep-hang-diem-hoc-sinh/xepHangDiem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/chuyen-Met-sang-Feet/changeMetToFeet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/chuyen-do-C-sang-do-F/doCsangdoF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/dien-tich-HCN/dienTichHCN.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/dien-tich-hinh-Vuong/dienTichHinhVuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/dien-tich-tam-giac-vuong/dienTichTamGiacVuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/kiem-tra-3-canh-la-TamGiac/kiemTra3CanhTamGiac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/kiem-tra-Age/checkAge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/lai-suat-Ngan-Hang/laixuatNganHang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/phuong-trinh-bac-1/phuongTrinhBac1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/phuong-trinh-bac-2/phuongTrinhBac2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luyện tập cấu trúc điều kiện 2/tinh-tien-Dien/tienDien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/Bai1trenbang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/Bai2trenbang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/Bai3trenbang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/taoCoCarodongian/coCarro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/taoVaThaoTac/taoVaThaoTacVoiMang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/timGiaTriTrongMang/timGtriMang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 1/timMaxtrongMang/timMaxTrongMang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Btap sử dụng hàm có sẵn/B1noiChuoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Btap sử dụng hàm có sẵn/B2Them-VaoChuoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Btap sử dụng hàm có sẵn/B3chuThuongsangHoa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/FakingTextareaonTyping.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/daoNguocMang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/inGtriTrungBinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/nhapPtuCanXoa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/pTuMaxVaVitri.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/soNguyenLonHonHoacBang10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-01/timPtuCoTrongManghaykhong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/b2inDaoNguoc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/b3DemKyTuSo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/b4DemsoTutrongString.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/b5KT2chuoiBangnhauKo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/inMang2Chieu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/Luyen-tap-mang-02/thayDoiPhanTu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mảng 2/TuDien.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2PPc35EPihtxUb31rokjjobcHqZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Learn in Codegym/Module-1/Web-Goblins",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="702f53bf-6d83-4af7-9d24-ee13cbb6f713" name="Changes" comment="" />
+      <created>1683361955741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683361955741</updated>
+      <workItem from="1683361956785" duration="140000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<h3>Chuyển độ C sang độ F và độ K</h3>
+</body>
+</html>
+<script>
+    class Temperature {
+        doC;
+
+        constructor(doC) {
+            this.doC = doC;
+        }
+
+        display() {
+            document.write("Nhiệt độ C = " + this.doC + "ºC <br>")
+        }
+
+        changeCtoF() {
+            document.write("Độ F = " + (9 / 5 * this.doC + 32) + "ºF<br>")
+        }
+
+        changeCtoK() {
+            document.write("Độ K = " + (this.doC + 273.15) + "ºK<br>")
+        }
+    }
+
+    let doC = parseFloat(prompt("Nhập độ ºC"))
+    let changeNhietDo = new Temperature(doC);
+
+    if (doC >= -273) {
+        changeNhietDo.display();
+        changeNhietDo.changeCtoF();
+        changeNhietDo.changeCtoK();
+    } else {
+        alert("Nhập nhiệt độ phù hợp");
+    }
+</script>

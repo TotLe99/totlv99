@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng
+    tháng.</h3>
+</body>
+</html>
+<script>
+    function LaiXuatNganHang() {
+        let money = prompt("Nhập số tiền gửi");
+        let year = prompt("Nhập số năm gửi");
+        const r = 8 / 100; //Lãi xuất hàng năm
+        const n = 4; //Quí
+
+        let amount = money * Math.pow(1 + (r / n), n * year);
+        let cinterest = amount - money;
+        document.writeln("Lãi kép sau " + year + " năm là " + cinterest + "<br>")
+        document.writeln("Số tiền có được sau " + year + " năm là " + amount)
+    }
+    LaiXuatNganHang();
+</script>

@@ -1,0 +1,42 @@
+body {
+    background-color: #82D5AF;
+}
+
+.tieude th{
+    text-align: center;
+    color: white;
+    background-color: orange;
+}
+.t2 {
+    width: 100%;
+}
+.t2 td{
+    width: 100px;
+}
+.t2 th{
+}
+.t3 {
+    width: 100%;
+}
+th{
+    color: darkblue;
+    padding-left: 30px;
+}
+td {
+    color: orange;
+    border-spacing: 0px;
+    padding: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+form {
+    margin: 10px 20px 20px 15px;
+    padding: 5px;
+    background-color: white;
+    width: 40%;
+
+}

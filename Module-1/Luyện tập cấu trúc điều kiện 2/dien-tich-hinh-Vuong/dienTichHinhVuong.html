@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích hifnh Vuông</title>
+</head>
+<body>
+Nhập cạnh hình Vuông: <input id="canhV" value=""> <br><br>
+<button onclick="dientich()" type="button">Diện tích</button>
+<br><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function dientich() {
+        let canh = parseFloat(document.getElementById("canhV").value);
+        let result = document.getElementById("result");
+        let dientichV;
+        dientichV = canh * canh;
+        result.innerText = "Diện tích hình Vuông = " + dientichV;
+    }
+</script>
