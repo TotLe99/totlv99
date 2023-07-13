@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="wrapper">
+    <div class="title"><span>REGISTER</span></div>
+    <form method="post" th:object="${account}">
+      <div class="row">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="UserName" th:field="*{username}" required>
+      </div>
+      <div class="row">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" th:field="*{password}" required>
+      </div>
+      <div class="form-group">
+        <select name="idRole" hidden="hidden">
+          <option value="2">USER</option>
+        </select>
+      </div>
+      <div class="row button">
+        <input type="submit" value="Register">
+      </div>
+      <div class="signup-link">Has account <a href="/login">Signin now</a></div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
